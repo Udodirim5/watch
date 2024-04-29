@@ -13,6 +13,7 @@ let s2 = document.getElementById("s2");
 let s3 = document.getElementById("s3");
 let s4 = document.getElementById("s4");
 let s5 = document.getElementById("s1");
+let camDiv = document.querySelector(".cam-div-inner");
 
 standby.addEventListener("click", (e) => {
   e.preventDefault();
@@ -62,6 +63,17 @@ inputs.forEach(function (input, index) {
   input.addEventListener("change", function () {
     btnWheel[index].click();
   });
+});
+
+document.getElementById("cam-btn").addEventListener("click", () => {
+  camDiv.classList.add("is-visible");
+});
+document.getElementById("closeBtn").addEventListener("click", () => {
+  camDiv.classList.remove("is-visible");
+});
+
+document.getElementById("file-upload").addEventListener("change", function () {
+  document.getElementById("file-name").innerText = this.files[0].name;
 });
 
 /*

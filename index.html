@@ -16,7 +16,6 @@
       <div class="content">
         <div class="blank"></div>
         <div class="on">
-          <!-- <h1 class="welcome">WELCOME</h1> -->
           <div class=" welcome">
             <svg>
               <text x="50%" y="50%" dy=".5em" text-anchor="middle">
@@ -27,21 +26,40 @@
 
           <main>
             <!-- <div class="time"></div> -->
-            <!-- <img
-              src="https://www.usnews.com/object/image/00000186-7a58-d975-aff7-fffbc8910000/iguazu-falls-stock.jpg?update-time=1677089883729&size=responsive970"
-              alt=""> -->
             <nav></nav>
             <section id="slider">
-              <input type="radio" name="slider" id="s1">
+              <input type="radio" name="slider" id="s1" checked>
               <input type="radio" name="slider" id="s2">
-              <input type="radio" name="slider" id="s3" checked>
+              <input type="radio" name="slider" id="s3">
               <input type="radio" name="slider" id="s4">
               <input type="radio" name="slider" id="s5">
-              <label for="s1" id="slide1"><img src="https://ibiene.com/wp-content/uploads/2021/04/Big-seven-travel-768x511.jpg" alt=""></label>
-              <label for="s2" id="slide2"><img src="https://ibiene.com/wp-content/uploads/2021/04/Getty-Images-768x513.jpg" alt=""></label>
-              <label for="s3" id="slide3"><img src="https://ibiene.com/wp-content/uploads/2021/04/Viator-1.jpg" alt=""></label>
-              <label for="s4" id="slide4"><img src="https://ibiene.com/wp-content/uploads/2021/04/Redditttt-768x512.jpg" alt=""></label>
-              <label for="s5" id="slide5"><img src="https://ibiene.com/wp-content/uploads/2021/04/pinterest-22-768x520.jpg" alt=""></label>
+              <label for="s1" id="slide1">
+                <div class="cam-div">
+                  <button id="cam-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                      class="bi bi-camera" viewBox="0 0 16 16">
+                      <path
+                        d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z" />
+                      <path
+                        d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+                    </svg>
+                  </button>
+                  <div class="cam-div-inner">
+                    <div id="closeBtn">x</div>
+                    <input type="file" capture="user" id="file-upload" accept="image/*">
+                    <div class="custom-button"
+                      onclick="document.getElementById('file-upload').click()"></div>
+                  </div>
+                </div>
+              </label>
+              <label for="s2" id="slide2"><img
+                  src="https://ibiene.com/wp-content/uploads/2021/04/Getty-Images-768x513.jpg" alt=""></label>
+              <label for="s3" id="slide3"><img src="https://ibiene.com/wp-content/uploads/2021/04/Viator-1.jpg"
+                  alt=""></label>
+              <label for="s4" id="slide4"><img src="https://ibiene.com/wp-content/uploads/2021/04/Redditttt-768x512.jpg"
+                  alt=""></label>
+              <label for="s5" id="slide5"><img
+                  src="https://ibiene.com/wp-content/uploads/2021/04/pinterest-22-768x520.jpg" alt=""></label>
             </section>
 
           </main>

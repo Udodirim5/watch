@@ -20,7 +20,7 @@ body {
   box-sizing: border-box;
 }
 
-svg {
+.welcome svg {
   font-family: "Russo One", sans-serif;
   width: 100%;
   height: 100%;
@@ -218,6 +218,8 @@ nav {
 }
 
 .inner-box.one svg {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 2px;
   left: 0;
@@ -352,6 +354,7 @@ nav {
 #slider label {
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   border: 4px solid #fff;
   margin: auto;
   width: 75%;
@@ -363,9 +366,80 @@ nav {
   cursor: pointer;
   transition: transform 0.4s ease;
 }
-  #slider label img{
-    object-fit: cover;
-  }
+
+.cam-div {
+  position: relative;
+}
+
+#slider label button {
+  margin-top: 40px;
+  padding: 10px;
+  height: fit-content;
+  background-color: #090606b8;
+  color: white;
+  border-radius: 9px;
+  transition: all 500ms ease;
+}
+
+.cam-div-inner {
+  position: absolute;
+  aspect-ratio: 1;
+  width: 200px;
+  top: 0;
+  left: 170px;
+  z-index: 2000;
+  background-color: #090606;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 500ms ease;
+}
+
+.is-visible {
+  left: -60px;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+#closeBtn {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 2em;
+  cursor: pointer;
+  color: #ffffff94;
+}
+
+#slider label button:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+
+input[type="file"] {
+  display: none;
+}
+
+/* Style the custom button */
+.custom-button {
+  position: absolute;
+  top: 110px;
+  left: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+#slider label img {
+  object-fit: cover;
+}
 
 #s1:checked~#slide4,
 #s2:checked~#slide5,
