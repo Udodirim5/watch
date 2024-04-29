@@ -432,7 +432,13 @@ input[type="file"] {
   cursor: pointer;
 }
 
-
+.cam-div-inner img{
+  visibility: hidden;
+  aspect-ratio: 1;
+  width: 350px;
+  object-fit: cover;
+  background-color: #090606;
+}
 
 
 

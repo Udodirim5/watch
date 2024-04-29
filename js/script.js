@@ -71,9 +71,11 @@ document.getElementById("cam-btn").addEventListener("click", () => {
 document.getElementById("closeBtn").addEventListener("click", () => {
   camDiv.classList.remove("is-visible");
 });
-
-document.getElementById("file-upload").addEventListener("change", function () {
-  document.getElementById("file-name").innerText = this.files[0].name;
+let capDisplay = document.getElementById("cam-display");
+let capInput = document.getElementById("file-upload");
+capInput.addEventListener("change", function () {
+  capDisplay.style.visibility = "visible";
+  capDisplay.src = URL.createObjectURL(capInput.files[0]);
 });
 
 /*
